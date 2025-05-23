@@ -56,7 +56,9 @@ Nama Kolom	dan Deskripsi
 
 ### Persiapan
 
-Sumber data: Dataset performa mahasiswa yang mencakup data akademik, sosial, dan administratif dari Jaya Jaya Institut. [link dataset](https://github.com/dicodingacademy/dicoding_dataset/raw/refs/heads/main/students_performance/data.csv). Dataset terdiri dari 4424 baris dan 37 kolom, yang sebagian besar kolomnya bertipe numerik (int64, float64), namun ada juga kolom bertipe kategorikal (object) termasuk dengan fitur Status.
+Sumber data: Dataset performa mahasiswa yang mencakup data akademik, sosial, dan administratif dari Jaya Jaya Institut. Dataset terdiri dari 4424 baris dan 37 kolom, yang sebagian besar kolomnya bertipe numerik (int64, float64), namun ada juga kolom bertipe kategorikal (object) termasuk dengan fitur Status.
+
+[Jaya Jaya Institut Link Dataset](https://github.com/dicodingacademy/dicoding_dataset/raw/refs/heads/main/students_performance/data.csv).
 
 * Setup environment:
     ```
@@ -96,7 +98,9 @@ Dashboard dibuat menggunakan **Metabase** untuk memvisualisasikan performa akade
 - **Faktor**: Menyediakan visualisasi hubungan antara status mahasiswa dengan beasiswa, usia saat masuk kuliah, status pembayaran kuliah, gender, status perkawinan, tunggakan mahasiswa dan waktu kehadiran kuliah terhadap peluang terjadinya dropout.
 - **Filter Interaktif**: Terdapat filter untuk Status, yang dapat memfilter data sesuai kebutuhan pengguna.
 
-Link dashboard Metabase: [Dashboard Metabase](http://localhost:3000/public/dashboard/922ce83f-9337-444b-9b92-a572e6ba481e)
+* Link dashboard Metabase:
+  
+[Dashboard Metabase](http://localhost:3000/public/dashboard/922ce83f-9337-444b-9b92-a572e6ba481e)
 
 
 ## Menjalankan Sistem Machine Learning
