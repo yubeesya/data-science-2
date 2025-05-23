@@ -29,7 +29,7 @@ with st.form("form_prediksi"):
     application_mode = st.selectbox("Application Mode", [1, 2, 5, 7, 10, 15, 39, 42, 51, 57],
         format_func=lambda x: {
             1: "1 – 1st Phase (General)", 2: "2 – Ordinance 612/93",
-            5: "5 – Special (Azores)", 7: "7 – Lulusan PT Lain", 10: "10 – Ordinance 854-B/99",
+            5: "5 – Special (Azores)", 7: "7 – Another PT", 10: "10 – Ordinance 854-B/99",
             15: "15 – International Student", 39: "39 – Usia >23 tahun",
             42: "42 – Transfer", 51: "51 – Change of Institution", 57: "57 – Int'l Transfer"
         }.get(x, f"Mode {x}"))
@@ -39,7 +39,7 @@ with st.form("form_prediksi"):
     age = st.slider("Age at Enrollment", 17, 60, 20)
 
     tuition_status = st.radio("Tuition Status", ["In-credit", "Late"])
-    tuition_val = 0 if tuition_status == "In-credit" else 1
+    tuition_val = 1 if tuition_status == "In-credit" else 0
 
     curr_1st_grade = st.slider("Curricular units 1st semester grade (0-20)", 0.0, 20.0, 12.0)
     curr_2nd_grade = st.slider("Curricular units 2nd semester grade (0-20)", 0.0, 20.0, 12.0)
@@ -52,7 +52,7 @@ with st.form("form_prediksi"):
 # --- PREDIKSI ---
 if submitted:
     # Buat template input default
-    input_dict = {feat: 1 for feat in feature_order}
+    input_dict = {feat: 0 for feat in feature_order}
 
     # Masukkan nilai dari input pengguna
     input_dict.update({
