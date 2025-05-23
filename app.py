@@ -74,6 +74,6 @@ if submitted:
 
     pred = model.predict(input_scaled)[0]
     prob = model.predict_proba(input_scaled)[0][pred]
-    label = "Dropout" if pred == 1 elif "Enrolled" else "Graduate" 
+    label = "Dropout" if pred == 0 elif pred == 1 "Enrolled" else "Graduate" 
 
     st.success(f"📢 Prediction: **{label}**  \n🎯 Probability: **{prob:.2%}**")
