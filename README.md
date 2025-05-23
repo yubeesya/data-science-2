@@ -101,6 +101,8 @@ Dashboard dibuat menggunakan **Metabase** untuk memvisualisasikan performa akade
   
 [Dashboard Metabase](http://localhost:3000/public/dashboard/922ce83f-9337-444b-9b92-a572e6ba481e)
 
+<img src="https://raw.githubusercontent.com/yubeesya/data-science-2/refs/heads/main/images/hafsyah1325-dashboard.png" width="500">
+
 
 ## Menjalankan Sistem Machine Learning
 Prototype sistem prediksi dropout dibangun menggunakan Streamlit dan dapat dijalankan secara lokal maupun online.
@@ -112,6 +114,8 @@ streamlit run app.py
 ```
 * Link Dashboard Streamlit
 Klik [Streamlit Predict Dashboard](https://data-science-2.streamlit.app/) untuk membuka prototype yang sudah dijalankan pada streamlit community.
+
+<img src="https://raw.githubusercontent.com/yubeesya/data-science-2/refs/heads/main/images/hafsyah1325-streamlit.png" width="500">
 
 
 ## Conclusion
