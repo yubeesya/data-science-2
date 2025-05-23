@@ -95,8 +95,7 @@ Dashboard dibuat menggunakan **Metabase** untuk memvisualisasikan performa akade
 
 - **Ringkasan**: Menampilkan metrik utama berupa total mahasiswa, jumlah mahasiswa lulus, dan jumlah dropout dalam bentuk scorecard.
 - **Distribusi Status Mahasiswa**: Pie chart untuk melihat proporsi Graduate, Dropout, dan Enrolled.
-- **Faktor**: Menyediakan visualisasi hubungan antara status mahasiswa dengan beasiswa, usia saat masuk kuliah, status pembayaran kuliah, gender, status perkawinan, tunggakan mahasiswa dan waktu kehadiran kuliah terhadap peluang terjadinya dropout.
-- **Filter Interaktif**: Terdapat filter untuk Status, yang dapat memfilter data sesuai kebutuhan pengguna.
+- **Faktor**: Menyediakan visualisasi hubungan antara status mahasiswa dengan nilai, beasiswa, usia saat masuk kuliah, status pembayaran kuliah, biaya dan tunggakan mahasiswa terhadap peluang terjadinya dropout.
 
 * Link dashboard Metabase:
   
