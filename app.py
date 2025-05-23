@@ -39,7 +39,7 @@ with st.form("form_prediksi"):
     age = st.slider("Age at Enrollment", 17, 60, 20)
 
     tuition_status = st.radio("Tuition Status", ["In-credit", "Late"])
-    tuition_val = 1 if tuition_status == "In-credit" else 0
+    tuition_val = 0 if tuition_status == "In-credit" else 1
 
     curr_1st_grade = st.slider("Curricular units 1st semester grade (0-20)", 0.0, 20.0, 12.0)
     curr_2nd_grade = st.slider("Curricular units 2nd semester grade (0-20)", 0.0, 20.0, 12.0)
@@ -52,7 +52,7 @@ with st.form("form_prediksi"):
 # --- PREDIKSI ---
 if submitted:
     # Buat template input default
-    input_dict = {feat: 0 for feat in feature_order}
+    input_dict = {feat: 1 for feat in feature_order}
 
     # Masukkan nilai dari input pengguna
     input_dict.update({
@@ -72,8 +72,8 @@ if submitted:
     input_array = np.array([[input_dict[feat] for feat in feature_order]])
     input_scaled = scaler.transform(input_array)
 
-    pred = model.predict(input_scaled)[0]
-    prob = model.predict_proba(input_scaled)[0][pred]
+    pred = model.predict(input_scaled)[1]
+    prob = model.predict_proba(input_scaled)[1][pred]
     label = "Dropout" if pred == 0 else "Graduate" 
 
     st.success(f"📢 Prediction: **{label}**  \n🎯 Probability: **{prob:.2%}**")
