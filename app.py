@@ -72,8 +72,8 @@ if submitted:
     input_array = np.array([[input_dict[feat] for feat in feature_order]])
     input_scaled = scaler.transform(input_array)
 
-    pred = model.predict(input_scaled)[1]
-    prob = model.predict_proba(input_scaled)[1][pred]
+    pred = model.predict(input_scaled)[0]
+    prob = model.predict_proba(input_scaled)[0][pred]
     label = "Dropout" if pred == 0 else "Graduate" 
 
     st.success(f"📢 Prediction: **{label}**  \n🎯 Probability: **{prob:.2%}**")
